@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha ✨🌙</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Jogo da Velha 🌙✨</h1>
+        
+        <p id="turn-indicator">É a vez de: X</p>
+
+        <div class="scoreboard">
+  <h2>Placar</h2>
+  <p>🌙 X: <span id="score-x">0</span></p>
+  <p>⭐ O: <span id="score-o">0</span></p>
+  <p>✨ Empates: <span id="score-draw">0</span></p>
+  <button id="resetScore">Zerar Placar</button>
+</div>
+
+        <div id="board" class="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+
+        <div id="message" class="message">
+            <p id="message-text"></p>
+            <button id="restartButton">Reiniciar</button>
+        </div>
+    </div>
+    
+ <canvas id="star-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
